@@ -4,6 +4,19 @@ A cheat-sheet for CSS with tips and tricks gathered from different sources.
 
 I was going through some of my old drives and stumbled upon this complete notes for when I was learning CSS.
 
+## Table of Contents
+
+1. [CSS Selectors](https://github.com/AmirLavasani/css-recap#css-selectors)
+    - [Simple Selectors](#1-simple-selectors)
+    - [Combinator Selectors](#2-combinator-selectors)
+    - [Pseudo-class Selectors](#3-pseudo-class-selectors)
+    - [Pseudo-element Selectors](#4-pseudo-element-selectors)
+    - [Attribute Selectors](#5-attribute-selectors)
+2. [Cascading Order](https://github.com/AmirLavasani/css-recap#cascading-order)
+3. [Colors](https://github.com/AmirLavasani/css-recap#colors)
+4. [Background Properties](https://github.com/AmirLavasani/css-recap#background)
+5. [Border Properties](https://github.com/AmirLavasani/css-recap#border)
+
 
 ## CSS Selectors
 
@@ -55,7 +68,7 @@ When multiple styles are defined for the same element, the cascading order deter
 2. **External and Internal Style Sheets**: Styles defined in external CSS files or within the `<style>` tags in the `<head>` section of the HTML document.
 3. **Browser Default Styles**: The default styles applied by the browser to elements when no specific styles are provided.
 
-## COLORS
+## Colors
 
 When working with shades of gray, it's common to define them using equal values for all three light sources.
 
@@ -68,7 +81,7 @@ When working with shades of gray, it's common to define them using equal values 
     - `#b4b4b4`
     - `#f0f0f0`
 
-## BACKGROUND
+## Background Properties
 
 In CSS, you can control the background of elements using various properties. Some of the essential CSS background properties include:
 
@@ -85,7 +98,7 @@ In CSS, you can control the background of elements using various properties. Som
 These background properties provide you with powerful tools to customize the visual appearance of elements on your web page.
 
 
-## BORDER
+## Border
 
 **CSS Border Properties**
 
