@@ -15,7 +15,10 @@ I was going through some of my old drives and stumbled upon this complete notes 
 2. [Cascading Order](https://github.com/AmirLavasani/css-recap#cascading-order)
 3. [Colors](https://github.com/AmirLavasani/css-recap#colors)
 4. [Background Properties](https://github.com/AmirLavasani/css-recap#background)
-5. [Border Properties](https://github.com/AmirLavasani/css-recap#border)
+5. [Borders](https://github.com/AmirLavasani/css-recap#border)
+6. [Margins](#margins)
+7. [Paddings](#paddings)
+8. [Height and Width](#height-and-width)
 
 
 ## CSS Selectors
@@ -148,3 +151,65 @@ The CSS border properties allow you to specify the style, width, and color of an
     all four borders are dotted
     */
   ```
+
+## Margins
+
+The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+> Note: Negative values are allowed.
+
+All the margin properties can have the following values:
+- `auto` - the browser calculates the margin
+- `length` - specifies a margin in px, pt, cm, etc.
+- `%` - specifies a margin in % of the width of the containing element
+- `inherit` - specifies that the margin should be inherited from the parent element
+
+**The `auto` Value**
+
+You can set the margin property to `auto` to horizontally center the element within its container.
+
+**Margin Collapse**
+
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+This does not happen on left and right margins! Only top and bottom margins!
+
+## Paddings
+
+The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+> Note: Negative values are not allowed.
+
+All the padding properties can have the following values:
+- `length` - specifies a padding in px, pt, cm, etc.
+- `%` - specifies a padding in % of the width of the containing element
+- `inherit` - specifies that the padding should be inherited from the parent element
+
+**Padding and Element Width**
+
+The CSS `width` property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).
+
+To keep the width at 300px, no matter the amount of padding, you can use the `box-sizing` property. This causes the element to maintain its width; if you increase the padding, the available content space will decrease.
+```css
+{ box-sizing: border-box; }
+```
+
+## Height and Width
+
+The `height` and `width` properties are used to set the height and width of an element.
+
+The `height` and `width` properties **do not** include padding, borders, or margins. They set the height/width of the area inside the padding, border, and margin of the element.
+
+The `height` and `width` properties may have the following values:
+- `auto` - This is default. The browser calculates the height and width
+- `length` - Defines the height/width in px, cm etc.
+- `%` - Defines the height/width in percent of the containing block
+- `initial` - Sets the height/width to its default value
+- `inherit` - The height/width will be inherited from its parent value
+
+**Setting Max-Width**
+
+The `max-width` property is used to set the maximum width of an element.
+
+The `max-width` can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to `none` (this is default, meaning that there is no maximum width).
+
+> Note: The value of the `max-width` property overrides `width`.
