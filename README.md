@@ -6,16 +6,16 @@ I was going through some of my old drives and stumbled upon this complete notes 
 
 ## Table of Contents
 
-1. [CSS Selectors](https://github.com/AmirLavasani/css-recap#css-selectors)
+1. [CSS Selectors](#css-selectors)
     - [Simple Selectors](#1-simple-selectors)
     - [Combinator Selectors](#2-combinator-selectors)
     - [Pseudo-class Selectors](#3-pseudo-class-selectors)
     - [Pseudo-element Selectors](#4-pseudo-element-selectors)
     - [Attribute Selectors](#5-attribute-selectors)
-2. [Cascading Order](https://github.com/AmirLavasani/css-recap#cascading-order)
-3. [Colors](https://github.com/AmirLavasani/css-recap#colors)
-4. [Background Properties](https://github.com/AmirLavasani/css-recap#background)
-5. [Borders](https://github.com/AmirLavasani/css-recap#border)
+2. [Cascading Order](#cascading-order)
+3. [Colors](#colors)
+4. [Background Properties](#background)
+5. [Borders](#border)
 6. [Margins](#margins)
 7. [Paddings](#paddings)
 8. [Height and Width](#height-and-width)
