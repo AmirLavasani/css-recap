@@ -19,6 +19,8 @@ I was going through some of my old drives and stumbled upon this complete notes 
 6. [Margins](#margins)
 7. [Paddings](#paddings)
 8. [Height and Width](#height-and-width)
+9. [Box Model](#box-model)
+10. [Outline](#outline)
 
 
 ## CSS Selectors
@@ -213,3 +215,33 @@ The `max-width` property is used to set the maximum width of an element.
 The `max-width` can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to `none` (this is default, meaning that there is no maximum width).
 
 > Note: The value of the `max-width` property overrides `width`.
+
+## Box Model
+
+Explanation of the different parts:
+- **Content** - The content of the box, where text and images appear
+- **Padding** - Clears an area around the content. The padding is transparent
+- **Border** - A border that goes around the padding and content
+- **Margin** - Clears an area outside the border. The margin is transparent
+
+## Outline
+
+An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+
+```css
+.dotted {
+  outline-style: dotted;
+}
+
+/* Available values:
+  dotted
+  dashed
+  solid
+  double
+  groove
+  ridge
+  inset
+  outset
+*/
+
+```
