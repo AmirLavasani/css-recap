@@ -245,3 +245,48 @@ An outline is a line that is drawn around elements, OUTSIDE the borders, to make
 */
 
 ```
+
+## Text
+
+**Text Alignment**
+
+The `text-align` property is used to set the horizontal alignment of text. Text can be left or right aligned, centered, or justified.
+
+**Text Transformation**
+
+The `text-transform` property is used to specify uppercase and lowercase letters in text.
+
+```css
+{
+  text-transform: uppercase;
+  /* Available values:
+    uppercase
+    lowercase
+    capitalize
+  */ 
+}
+```
+
+**Text Indentation**
+
+The `text-indent` property is used to specify the indentation of the first line of a text.
+
+**Letter Spacing**
+
+The `letter-spacing` property is used to specify the space between the characters in a text.
+
+**Line Height**
+
+The `line-height` property is used to specify the space between lines.
+
+**Text Direction**
+
+The `direction` property is used to change the text direction of an element.
+
+**Word Spacing**
+
+The `word-spacing` property is used to specify the space between the words in a text.
+
+**Text Shadow**
+
+The `text-shadow` property adds shadow to text.
