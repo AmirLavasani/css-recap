@@ -21,6 +21,8 @@ I was going through some of my old drives and stumbled upon this complete notes 
 8. [Height and Width](#height-and-width)
 9. [Box Model](#box-model)
 10. [Outline](#outline)
+11. [Text](#text)
+12. [Fonts](#fonts)
 
 
 ## CSS Selectors
@@ -290,3 +292,63 @@ The `word-spacing` property is used to specify the space between the words in a 
 **Text Shadow**
 
 The `text-shadow` property adds shadow to text.
+
+
+## Fonts
+
+The CSS font properties define the font family, boldness, size, and the style of a text.
+
+In CSS, there are two types of font family names:
+
+- **Generic family** - a group of font families with a similar look (like "Serif" or "Monospace")
+- **Font family** - a specific font family (like "Times New Roman" or "Arial")
+
+**Serif** - Serif fonts have small lines at the ends on some characters
+
+**Sans-serif** - "Sans" means without - these fonts do not have the lines at the ends of characters
+
+**Monospace** - All monospace characters have the same width
+
+> Note: On computer screens, sans-serif fonts are considered easier to read than serif fonts.
+
+**Font Family**
+
+The font family of text is set with the `font-family` property.
+The `font-family` property should hold several font names as a "fallback" system. Start with the font you want, and end with a generic family.
+
+**Font Size**
+
+The `font-size` property sets the size of the text.
+
+**Set Font Size With Em**
+
+To allow users to resize the text (in the browser menu), many developers use `em` instead of pixels.
+The `em` size unit is recommended by the W3C. Default: 1em = 16px.
+
+**Use a Combination of Percent and Em**
+
+The solution that works in all browsers is to set a default font-size in percent for the `<body>` element:
+
+```css
+body {
+  font-size: 100%;
+}
+h1 {
+  font-size: 2.5em;
+}
+```
+
+**Font Weight**
+
+The `font-weight` property specifies the weight and boldness of a font.
+
+**Responsive Font Size**
+
+The text size can be set with a `vw` unit, which means the "viewport width".
+
+Viewport is the browser window size. `1vw = 1%` of viewport width.
+
+**Font Variant**
+
+The `font-variant` property specifies whether or not text should be displayed in a small-caps font.
+In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appear in a smaller font size than the original uppercase letters in the text.
