@@ -352,3 +352,43 @@ Viewport is the browser window size. `1vw = 1%` of viewport width.
 
 The `font-variant` property specifies whether or not text should be displayed in a small-caps font.
 In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appear in a smaller font size than the original uppercase letters in the text.
+
+## Icons
+
+
+Add the name of the specified icon class to any inline HTML element (like `<i>` or `<span>`).
+
+Three Icon Library:
+
+  - **Font Awesome Icons**
+  - **Bootstrap Icons**
+  - **Google Icons**
+
+
+```html
+
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<i class="fas fa-cloud"></i>
+
+</body>
+
+```
+
+
+
+## Links
+
+The four links states are:
+- `a:link` - a normal, unvisited link
+- `a:visited` - a link the user has visited
+- `a:hover` - a link when the user mouses over it
+- `a:active` - a link the moment it is clicked
+
+> `a:hover` MUST come after `a:link` and `a:visited`
+
+> `a:active` MUST come after `a:hover`
