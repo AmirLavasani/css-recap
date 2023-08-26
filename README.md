@@ -23,6 +23,8 @@ I was going through some of my old drives and stumbled upon this complete notes 
 10. [Outline](#outline)
 11. [Text](#text)
 12. [Fonts](#fonts)
+13. [Icons](#icons)
+14. [Links](#links)
 
 
 ## CSS Selectors
