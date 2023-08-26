@@ -25,6 +25,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 12. [Fonts](#fonts)
 13. [Icons](#icons)
 14. [Links](#links)
+15. [Tables](#tables)
 
 
 ## CSS Selectors
@@ -394,3 +395,17 @@ The four links states are:
 > `a:hover` MUST come after `a:link` and `a:visited`
 
 > `a:active` MUST come after `a:hover`
+
+## Tables
+
+**Collapse Table Borders**
+
+The `border-collapse` property sets whether the table borders should be collapsed into a single border.
+
+**Striped Tables**
+
+For zebra-striped tables, use the `nth-child()` selector and add a `background-color` to all even (or odd) table rows.
+
+**Responsive Table**
+
+Add a container element (like `<div>`) with `overflow-x:auto` around the `<table>` element to make it responsive.
