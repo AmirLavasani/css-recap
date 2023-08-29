@@ -26,6 +26,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 13. [Icons](#icons)
 14. [Links](#links)
 15. [Tables](#tables)
+16. [`display` Property](#display-property)
 
 
 ## CSS Selectors
@@ -409,3 +410,26 @@ For zebra-striped tables, use the `nth-child()` selector and add a `background-c
 **Responsive Table**
 
 Add a container element (like `<div>`) with `overflow-x:auto` around the `<table>` element to make it responsive.
+
+## `display` Property
+
+The `display` property specifies if/how an element is displayed.
+
+**Block-level Elements**
+
+A block-level element always starts on a new line and takes up the full width available.
+
+**Inline Elements**
+
+An inline element does not start on a new line and only takes up as much width as necessary.
+
+**`display: none;`**
+
+`display: none;` is commonly used with JavaScript to hide and show elements without deleting and recreating them.
+The `<script>` element uses `display: none;` as default.
+
+**Hide an Element - `display:none` or `visibility:hidden`?**
+
+`display: none;` - The element will be hidden, and the page will be displayed as if the element is not there.
+
+`visibility: hidden;` - However, the element will still take up the same space as before. The element will be hidden but still affect the layout.
