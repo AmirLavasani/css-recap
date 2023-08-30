@@ -27,6 +27,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 14. [Links](#links)
 15. [Tables](#tables)
 16. [`display` Property](#display-property)
+16. [`position` Property](#position-property)
 
 
 ## CSS Selectors
@@ -433,3 +434,54 @@ The `<script>` element uses `display: none;` as default.
 `display: none;` - The element will be hidden, and the page will be displayed as if the element is not there.
 
 `visibility: hidden;` - However, the element will still take up the same space as before. The element will be hidden but still affect the layout.
+
+## The `position` Property
+
+The `position` property specifies the type of positioning method used for an element.
+
+There are five different position values:
+- `static`
+- `relative`
+- `fixed`
+- `absolute`
+- `sticky`
+
+**`position: static;`**
+
+- HTML elements are positioned static by default.
+
+- Static positioned elements are not affected by the `top`, `bottom`, `left`, and `right` properties.
+- An element with `position: static;` is not positioned in any special way; it is always positioned according to the normal flow of the page.
+
+**`position: relative;`**
+
+- An element with `position: relative;` is positioned relative to its normal position.
+- Setting the `top`, `right`, `bottom`, and `left` properties of a relatively-positioned element will cause it to be adjusted away from its normal position.
+
+**`position: fixed;`**
+
+- An element with `position: fixed;` is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+- The `top`, `right`, `bottom`, and `left` properties are used to position the element.
+
+**`position: absolute;`**
+
+- An element with `position: absolute;` is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+**`position: sticky;`**
+
+- An element with `position: sticky;` is positioned based on the user's scroll position.
+- A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like `position: fixed`).
+
+```css
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+```
+
+**Overlapping Elements**
+
+The `z-index` property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
