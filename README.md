@@ -27,8 +27,8 @@ I was going through some of my old drives and stumbled upon this complete notes 
 14. [Links](#links)
 15. [Tables](#tables)
 16. [`display` Property](#display-property)
-16. [`position` Property](#position-property)
-
+17. [`position` Property](#position-property)
+18. [Overflow](#overflow)
 
 ## CSS Selectors
 
@@ -485,3 +485,21 @@ div.sticky {
 **Overlapping Elements**
 
 The `z-index` property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+
+
+## Overflow
+
+The CSS `overflow` property controls what happens to content that is too big to fit into an area.
+
+The `overflow` property has the following values:
+- `visible` - Default. The overflow is not clipped. The content renders outside the element's box.
+- `hidden` - The overflow is clipped, and the rest of the content will be invisible.
+- `scroll` - The overflow is clipped, and a scrollbar is added to see the rest of the content.
+- `auto` - Similar to scroll, but it adds scrollbars only when necessary.
+
+>Note: The overflow property only works for block elements with a specified height.
+
+**`overflow-x` and `overflow-y`**
+
+- `overflow-x` specifies what to do with the left/right edges of the content.
+- `overflow-y` specifies what to do with the top/bottom edges of the content.
