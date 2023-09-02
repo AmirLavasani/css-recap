@@ -29,6 +29,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 16. [`display` Property](#display-property)
 17. [`position` Property](#position-property)
 18. [Overflow](#overflow)
+17. [`float` and `clear` Property](#float-and-clear-property)
 
 ## CSS Selectors
 
@@ -503,3 +504,51 @@ The `overflow` property has the following values:
 
 - `overflow-x` specifies what to do with the left/right edges of the content.
 - `overflow-y` specifies what to do with the top/bottom edges of the content.
+
+## `float` and `clear` Property
+
+The CSS `float` property specifies how an element should float.
+The `float` property can have one of the following values:
+- `left` - The element floats to the left of its container
+- `right` - The element floats to the right of its container
+- `none` - The element does not float (will be displayed just where it occurs in the text). This is default
+- `inherit` - The element inherits the float value of its parent
+
+The CSS `clear` property specifies what elements can float beside the cleared element and on which side.
+The `clear` property can have one of the following values:
+- `none` - Allows floating elements on both sides. This is default
+- `left` - No floating elements allowed on the left side
+- `right` - No floating elements allowed on the right side
+- `both` - No floating elements allowed on either the left or the right side
+- `inherit` - The element inherits the clear value of its parent
+
+### The clearfix Hack
+
+If an element is taller than the element containing it, and it is floated, it will "overflow" outside of its container. To fix this problem, you can add `overflow: auto;` to the containing element.
+
+```css
+.clearfix {
+  overflow: auto;
+}
+```
+
+The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:
+
+```css
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+```
+
+**Equal Height Boxes**
+
+This is where **CSS3 Flexbox** comes in handy - as it can automatically stretch boxes to be as long as the longest box
+
+```css
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+```
