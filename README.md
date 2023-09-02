@@ -30,7 +30,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 17. [`position` Property](#position-property)
 18. [Overflow](#overflow)
 17. [`float` and `clear` Property](#float-and-clear-property)
-18. [Horizontal & Vertical Align](#horizontal-&-vertical-align)
+18. [Horizontal and Vertical Align](#horizontal-and-vertical-align)
 
 ## CSS Selectors
 
@@ -569,30 +569,7 @@ This is where **CSS3 Flexbox** comes in handy - as it can automatically stretch 
 }
 ```
 
-## Horizontal aand Vertical Align
-
-**Center Align Elements**
-
-To horizontally center a block element (like `<div>`), use `margin: auto;`.
-
-**Center Align Text**
-
-To just center the text inside an element, use `text-align: center;`.
-
-**Center an Image**
-
-To center an image, set left and right margin to auto and make it into a block element.
-
-```css
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
-```
-
-## Horizontal & Vertical Align
+## Horizontal and Vertical Align
 
 ### Center Align Elements
 
