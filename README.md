@@ -30,6 +30,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 17. [`position` Property](#position-property)
 18. [Overflow](#overflow)
 17. [`float` and `clear` Property](#float-and-clear-property)
+18. [Horizontal & Vertical Align](#horizontal-&-vertical-align)
 
 ## CSS Selectors
 
@@ -565,5 +566,148 @@ This is where **CSS3 Flexbox** comes in handy - as it can automatically stretch 
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
+}
+```
+
+## Horizontal aand Vertical Align
+
+**Center Align Elements**
+
+To horizontally center a block element (like `<div>`), use `margin: auto;`.
+
+**Center Align Text**
+
+To just center the text inside an element, use `text-align: center;`.
+
+**Center an Image**
+
+To center an image, set left and right margin to auto and make it into a block element.
+
+```css
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+```
+
+## Horizontal & Vertical Align
+
+### Center Align Elements
+
+To horizontally center a block element (like `<div>`), use `margin: auto;`.
+
+**Center Align Text**
+
+To just center the text inside an element, use `text-align: center;`.
+
+**Center an Image**
+
+To center an image, set left and right margin to auto and make it into a block element.
+
+```css
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+```
+
+### Left and Right Align
+
+**Using `position`**
+
+One method for aligning elements is to use `position: absolute;`.
+
+```css
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+```
+
+>Note: Absolute positioned elements are removed from the normal flow and can overlap elements.
+
+**Using `float`**
+
+Another method for aligning elements is to use the `float` property.
+
+```css
+.right {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+```
+
+> Note: If an element is taller than the element containing it and it is floated, it will overflow outside of its container. You can use the **clearfix hack** to fix this.
+
+```css
+.clearfix {
+  overflow: auto;
+}
+```
+
+### Center Vertically
+
+**Using `padding`**
+
+There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding.
+
+```css
+.center {
+  padding: 70px 0;
+}
+```
+
+To center both vertically and horizontally, use padding and `text-align: center`.
+
+```css
+.center {
+  padding: 70px 0;
+  text-align: center;
+}
+```
+
+**Using `line-height`**
+
+Another trick is to use the `line-height` property with a value that is equal to the height property.
+
+```css
+.center {
+  line-height: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+/* If the text has multiple lines, add the following: */
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+```
+
+**Using `position` & `transform`**
+
+If `padding` and `line-height` are not options, a third solution is to use positioning and the transform property.
+
+```css
+.center { 
+  height: 200px;
+  position: relative;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 ```
