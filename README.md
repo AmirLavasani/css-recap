@@ -436,6 +436,21 @@ The `<script>` element uses `display: none;` as default.
 
 `visibility: hidden;` - However, the element will still take up the same space as before. The element will be hidden but still affect the layout.
 
+### The `display: inline-block` Value
+
+**Compared to `display: inline`:**
+
+The major difference is that `display: inline-block` allows you to set a width and height on the element.
+Also, with `display: inline-block`, the top and bottom margins/paddings are respected, but with `display: inline`, they are not.
+
+**Compared to `display: block`:**
+
+The major difference is that `display: inline-block` does not add a line-break after the element, so the element can sit next to other elements.
+
+**Using `inline-block` to Create Navigation Links:**
+
+One common use for `display: inline-block` is to display list items horizontally instead of vertically.
+
 ## The `position` Property
 
 The `position` property specifies the type of positioning method used for an element.
