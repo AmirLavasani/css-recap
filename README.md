@@ -31,6 +31,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 18. [Overflow](#overflow)
 17. [`float` and `clear` Property](#float-and-clear-property)
 18. [Horizontal and Vertical Align](#horizontal-and-vertical-align)
+18. [Combinators](#combinators)
 
 ## CSS Selectors
 
@@ -686,5 +687,45 @@ If `padding` and `line-height` are not options, a third solution is to use posit
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+```
+
+## Combinators
+
+A combinator is something that explains the relationship between the selectors. There are four different combinators in CSS:
+
+- **Descendant Selector (space)**: The descendant selector matches all elements that are descendants of a specified element.
+
+```css
+/* Selects all <p> elements that are descendants of <div> elements */
+div p {
+    color: blue;
+}
+```
+
+- **Child Selector (>)**: The child selector selects all elements that are the direct children of a specified element.
+
+```css
+/* Selects all <li> elements that are direct children of <ul> elements */
+ul > li {
+    list-style-type: square;
+}
+```
+
+- **Adjacent Sibling Selector (+)**: The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element. Sibling elements must have the same parent element, and "adjacent" means "immediately following."
+
+```css
+/* Selects the <h2> element that is an immediate sibling of a <p> element */
+p + h2 {
+    font-weight: bold;
+}
+```
+
+- **General Sibling Selector (~)**: The general sibling selector selects all elements that are siblings of a specified element.
+
+```css
+/* Selects all <p> elements that are siblings of a <h2> element within the same parent */
+h2 ~ p {
+    font-style: italic;
 }
 ```
