@@ -31,7 +31,9 @@ I was going through some of my old drives and stumbled upon this complete notes 
 18. [Overflow](#overflow)
 17. [`float` and `clear` Property](#float-and-clear-property)
 18. [Horizontal and Vertical Align](#horizontal-and-vertical-align)
-18. [Combinators](#combinators)
+19. [Combinators](#combinators)
+20. [Pseudo-classes](#pseudo-classes)
+
 
 ## CSS Selectors
 
@@ -729,3 +731,73 @@ h2 ~ p {
     font-style: italic;
 }
 ```
+
+## Pseudo-classes
+
+A pseudo-class is used to define a special state of an element.
+
+```css
+selector:pseudo-class {
+  property: value;
+}
+```
+
+**`:first-child` Pseudo-class**
+
+The `:first-child` pseudo-class matches a specified element that is the first child of another element.
+
+```css
+/* Selects the first <li> element within an <ul> */
+ul li:first-child {
+    font-weight
+    : bold;
+}
+```
+In this example, the first `<li>` element within a `<ul>` will have its text displayed in bold.
+
+
+
+**`:lang` Pseudo-class**
+
+The `:lang` pseudo-class allows you to define special rules for different languages.
+
+```css
+/* Selects paragraphs in English language */
+p:lang(en) {
+    color: blue;
+}
+
+/* Selects paragraphs in French language */
+p:lang(fr) {
+    color: red;
+}
+```
+
+In this example, paragraphs with the **English (en)** language attribute will have blue text, while paragraphs with the **French (fr)** language attribute will have red text.
+
+### Common CSS Pseudo-classes
+
+1. `:hover`: Selects an element when the mouse pointer is over it.
+2. `:active`: Selects an element when it is being clicked or activated.
+3. `:focus`: Selects an element when it has keyboard input focus.
+4. `:first-child`: Selects the first child of a parent element.
+5. `:last-child`: Selects the last child of a parent element.
+6. `:nth-child()`: Selects elements based on their position within a parent element using a formula.
+7. `:not()`: Selects elements that do not match a given selector.
+8. `:checked`: Selects input elements (e.g., checkboxes and radio buttons) that are checked.
+9. `:disabled`: Selects form elements that are disabled.
+10. `:enabled`: Selects form elements that are enabled.
+11. `:required`: Selects form elements that are required to be filled out.
+12. `:empty`: Selects elements that have no children.
+13. `:target`: Selects the target element of an anchor link (e.g., `#example` in `<a href="#example">`).
+14. `:nth-of-type()`: Selects elements based on their position among elements of the same type within a parent element.
+15. `:first-of-type`: Selects the first occurrence of an element type within a parent element.
+16. `:last-of-type`: Selects the last occurrence of an element type within a parent element.
+17. `:only-child`: Selects elements that are the only child of their parent element.
+18. `:only-of-type`: Selects elements that are the only occurrence of their type within a parent element.
+19. `:placeholder`: Selects input elements with placeholder text.
+20. `:valid`: Selects form elements that are considered valid based on their input.
+21. `:invalid`: Selects form elements that are considered invalid based on their input.
+22. `:required`: Selects form elements that are required to be filled out.
+23. `:optional`: Selects form elements that are optional and not required.
+
