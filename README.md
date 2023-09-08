@@ -29,11 +29,11 @@ I was going through some of my old drives and stumbled upon this complete notes 
 16. [`display` Property](#display-property)
 17. [`position` Property](#position-property)
 18. [Overflow](#overflow)
-17. [`float` and `clear` Property](#float-and-clear-property)
-18. [Horizontal and Vertical Align](#horizontal-and-vertical-align)
-19. [Combinators](#combinators)
-20. [Pseudo-classes](#pseudo-classes)
-
+19. [`float` and `clear` Property](#float-and-clear-property)
+20. [Horizontal and Vertical Align](#horizontal-and-vertical-align)
+21. [Combinators](#combinators)
+22. [Pseudo-classes](#pseudo-classes)
+23. [Pseudo-elements](#pseudo-elements)
 
 ## CSS Selectors
 
@@ -801,3 +801,28 @@ In this example, paragraphs with the **English (en)** language attribute will ha
 22. `:required`: Selects form elements that are required to be filled out.
 23. `:optional`: Selects form elements that are optional and not required.
 
+## Pseudo-elements
+
+A CSS pseudo-element is used to style specified parts of an element.
+
+```css
+selector::pseudo-element {
+  property: value;
+}
+```
+
+**`::first-line` Pseudo-element**
+
+The `::first-line` pseudo-element is used to add a special style to the first line of a text.
+
+**`::before` Pseudo-element**
+
+The `::before` pseudo-element can be used to insert some content before the content of an element.
+
+**`::after` Pseudo-element**
+
+The `::after` pseudo-element can be used to insert some content after the content of an element.
+
+**`::selection` Pseudo-element**
+
+The `::selection` pseudo-element matches the portion of an element that is selected by a user.
