@@ -34,6 +34,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 21. [Combinators](#combinators)
 22. [Pseudo-classes](#pseudo-classes)
 23. [Pseudo-elements](#pseudo-elements)
+24. [Transparency](#transparency)
 
 ## CSS Selectors
 
@@ -826,3 +827,22 @@ The `::after` pseudo-element can be used to insert some content after the conten
 **`::selection` Pseudo-element**
 
 The `::selection` pseudo-element matches the portion of an element that is selected by a user.
+
+## Transparency
+
+The `opacity` property can take a value from 0.0 to 1.0. The lower value, the more transparent
+
+```css
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+```
+
+**Transparent Hover Effect**
+
+The `opacity` property is often used together with the `:hover` selector to change the opacity on *mouse-over*
+
+**Transparency using RGBA**
+
+If you do not want to apply opacity to child elements, use RGBA color values.
