@@ -35,6 +35,8 @@ I was going through some of my old drives and stumbled upon this complete notes 
 22. [Pseudo-classes](#pseudo-classes)
 23. [Pseudo-elements](#pseudo-elements)
 24. [Transparency](#transparency)
+25. [Navigation Bar](#navigation-bar)
+
 
 ## CSS Selectors
 
@@ -846,3 +848,42 @@ The `opacity` property is often used together with the `:hover` selector to chan
 **Transparency using RGBA**
 
 If you do not want to apply opacity to child elements, use RGBA color values.
+
+
+## Navigation Bar
+
+A Navigation Bar is essentially a list of links.
+
+- **display: block**: Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want).
+
+- **Active/Current Navigation Link**: Add an `active` class to the current link to let the user know which page he/she is on.
+
+### Horizontal Navigation Bar
+
+- **Inline List Items**: One way to build a horizontal navigation bar is to specify the `<li>` elements as inline.
+
+- **Floating List Items**: Another way of creating a horizontal navigation bar is to float the `<li>` elements and specify a layout for the navigation links.
+
+- **Border Dividers**: Add the `border-right` property to `<li>` to create link dividers.
+
+### Fixed Navigation Bar
+
+> Note: Fixed position might not work properly on mobile devices.
+
+- **Fixed Top**
+  ```css
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  ```
+
+- **Fixed Bottom**
+  ```css
+  ul {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  ```
