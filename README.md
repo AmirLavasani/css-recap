@@ -36,6 +36,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 23. [Pseudo-elements](#pseudo-elements)
 24. [Transparency](#transparency)
 25. [Navigation Bar](#navigation-bar)
+26. [Attribute Selectors](#attribute-selectors)
 
 
 ## CSS Selectors
@@ -887,3 +888,56 @@ A Navigation Bar is essentially a list of links.
     width: 100%;
   }
   ```
+
+## Attribute Selectors
+
+Attribute selectors in CSS allow you to style HTML elements based on specific attributes or attribute values.
+
+### [attribute] Selector
+
+The `[attribute]` selector is used to select elements with a specified attribute.
+
+### [attribute="value"] Selector
+
+The `[attribute="value"]` selector is used to select elements with a specified attribute and value.
+
+### [attribute~="value"] Selector
+
+The `[attribute~="value"]` selector is used to select elements with an attribute value containing a specified word.
+
+### [attribute|="value"] Selector
+
+The `[attribute|="value"]` selector is used to select elements with the specified attribute starting with the specified value.
+
+### [attribute^="value"] Selector
+
+The `[attribute^="value"]` selector is used to select elements whose attribute value begins with a specified value.
+
+### [attribute$="value"] Selector
+
+The `[attribute$="value"]` selector is used to select elements whose attribute value ends with a specified value.
+
+### [attribute*="value"] Selector
+
+The `[attribute*="value"]` selector is used to select elements whose attribute value contains a specified value.
+
+### Styling Forms
+
+Attribute selectors can be useful for styling forms without class or ID:
+
+```css
+input[type="text"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+
+input[type="button"] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}
+```
+
+These selectors provide a powerful way to target specific elements in your HTML based on their attributes, allowing for fine-grained styling control.
