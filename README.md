@@ -37,7 +37,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 24. [Transparency](#transparency)
 25. [Navigation Bar](#navigation-bar)
 26. [Attribute Selectors](#attribute-selectors)
-
+27. [Counters](#counters)
 
 ## CSS Selectors
 
@@ -941,3 +941,16 @@ input[type="button"] {
 ```
 
 These selectors provide a powerful way to target specific elements in your HTML based on their attributes, allowing for fine-grained styling control.
+
+
+## Counters
+
+CSS counters function like "variables" that can be incremented by CSS rules, tracking how many times they are used. To work with CSS counters, you can utilize the following properties:
+
+- **counter-reset**: This property creates or resets a counter.
+
+- **counter-increment**: It increments a counter value.
+
+- **content**: The `content` property is used to insert generated content.
+
+- **counter() or counters() function**: These functions are used to add the value of a counter to an element.
