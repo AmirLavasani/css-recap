@@ -38,6 +38,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 25. [Navigation Bar](#navigation-bar)
 26. [Attribute Selectors](#attribute-selectors)
 27. [Counters](#counters)
+28. [CSS Units](#css-units)
 
 ## CSS Selectors
 
@@ -954,3 +955,40 @@ CSS counters function like "variables" that can be incremented by CSS rules, tra
 - **content**: The `content` property is used to insert generated content.
 
 - **counter() or counters() function**: These functions are used to add the value of a counter to an element.
+
+
+## CSS Units
+
+CSS offers various units for expressing lengths, which can be categorized into two types: absolute and relative.
+
+### Absolute Lengths
+
+Absolute length units are fixed, and a length expressed in any of these will appear as exactly that size:
+
+- **cm**: Centimeters
+- **mm**: Millimeters
+- **in**: Inches (1in = 96px = 2.54cm)
+- **px**: Pixels (1px = 1/96th of 1in) *
+- **pt**: Points (1pt = 1/72 of 1in)
+- **pc**: Picas (1pc = 12pt)
+
+> Pixels (px) are relative to the viewing device. For low-dpi devices, 1px equals one device pixel (dot) of the display. For printers and high-resolution screens, 1px implies multiple device pixels.
+
+### Relative Lengths
+
+Relative length units specify a length relative to another length property, making them more adaptable across different rendering mediums:
+
+- **em**: Relative to the font-size of the element (e.g., 2em means 2 times the size of the current font)
+- **ex**: Relative to the x-height of the current font (rarely used)
+- **ch**: Relative to the width of the "0" (zero)
+- **rem**: Relative to the font-size of the root element
+- **vw**: Relative to 1% of the width of the viewport *
+- **vh**: Relative to 1% of the height of the viewport *
+- **vmin**: Relative to 1% of the viewport's* smaller dimension
+- **vmax**: Relative to 1% of the viewport's* larger dimension
+- **%**: Relative to the parent element
+
+> Viewport refers to the browser window size. For example, if the viewport is 50cm wide, 1vw equals 0.5cm.
+
+> **Tip**: The `em` and `rem` units are practical for creating perfectly scalable layouts.
+
