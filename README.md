@@ -39,6 +39,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 26. [Attribute Selectors](#attribute-selectors)
 27. [Counters](#counters)
 28. [CSS Units](#css-units)
+29. [Specificity](#specificity)
 
 ## CSS Selectors
 
@@ -992,3 +993,24 @@ Relative length units specify a length relative to another length property, maki
 
 > **Tip**: The `em` and `rem` units are practical for creating perfectly scalable layouts.
 
+
+## Specificity
+
+Think of specificity as a score or rank that determines which style declarations are ultimately applied to an element.
+
+### Specificity Hierarchy
+
+1. **Inline styles**: Attached directly to the element to be styled. Example: `<h1 style="color: #ffffff;">`.
+2. **IDs**: Unique identifiers for page elements, such as `#navbar`.
+3. **Classes, attributes, and pseudo-classes**: This category includes `.classes`, `[attributes]`, and pseudo-classes like `:hover`, `:focus`, etc.
+4. **Elements and pseudo-elements**: This category includes element names and pseudo-elements, such as `h1`, `div`, `:before`, and `:after`.
+
+### Specificity Rules
+
+- In cases of equal specificity, the latest rule takes precedence.
+- ID selectors have a higher specificity than attribute selectors.
+- Contextual selectors (selectors based on the element's context) are more specific than a single element selector.
+- A class selector (`.class`) has higher specificity than any number of element selectors.
+- The universal selector (`*`) and inherited values have a specificity of 0.
+
+Understanding specificity is crucial for managing the application of styles in complex web documents.
