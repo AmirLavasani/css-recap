@@ -40,6 +40,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 27. [Counters](#counters)
 28. [CSS Units](#css-units)
 29. [Specificity](#specificity)
+30. [Image Background](#image-background)
 
 ## CSS Selectors
 
@@ -1014,3 +1015,29 @@ Think of specificity as a score or rank that determines which style declarations
 - The universal selector (`*`) and inherited values have a specificity of 0.
 
 Understanding specificity is crucial for managing the application of styles in complex web documents.
+
+
+## Image Background
+
+Two additional values for `background-size` are `contain` and `cover`:
+
+- **`contain`**: Scales the background image to be as large as possible while ensuring both its width and height fit inside the content area.
+- **`cover`**: Scales the background image to fully cover the content area, ensuring that both its width and height equal or exceed the content area.
+
+### Full-Size Background Image
+
+```css
+html {
+  background: url(img_man.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+```
+## `background-origin` Property
+
+The CSS `background-origin` property specifies where the background image is positioned and accepts three values:
+
+- **`border-box`**: The background image starts from the upper-left corner of the border.
+- **`padding-box` (default)**: The background image starts from the upper-left corner of the padding edge.
+- **`content-box`**: The background image starts from the upper-left corner of the content.
+
+Understanding these properties allows you to control how background images are positioned within elements.
