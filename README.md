@@ -41,6 +41,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 28. [CSS Units](#css-units)
 29. [Specificity](#specificity)
 30. [Image Background](#image-background)
+31. [Gradients](#gradients)
 
 ## CSS Selectors
 
@@ -1032,6 +1033,7 @@ html {
   background-size: cover;
 }
 ```
+
 ## `background-origin` Property
 
 The CSS `background-origin` property specifies where the background image is positioned and accepts three values:
@@ -1041,3 +1043,23 @@ The CSS `background-origin` property specifies where the background image is pos
 - **`content-box`**: The background image starts from the upper-left corner of the content.
 
 Understanding these properties allows you to control how background images are positioned within elements.
+
+## Gradients
+
+[CSS gradients](https://www.w3schools.com/css/css3_gradients.asp) allow you to display smooth transitions between two or more specified colors.
+
+CSS defines two types of gradients:
+
+1. **Linear Gradients**: These gradients can go in various directions, including down, up, left, right, or diagonally.
+
+**Syntax**:
+```css
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+```
+
+2. **Radial Gradients**: Radial gradients are defined by their center point and can create circular or elliptical gradients.
+
+**Syntax**:
+```css
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+```
