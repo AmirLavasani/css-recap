@@ -42,6 +42,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 29. [Specificity](#specificity)
 30. [Image Background](#image-background)
 31. [Gradients](#gradients)
+32. [Shadow Effects](#shadow-effects)
 
 ## CSS Selectors
 
@@ -1063,3 +1064,32 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
 ```css
 background-image: radial-gradient(shape size at position, start-color, ..., last-color);
 ```
+
+## Shadow Effects
+
+### Text Shadow
+
+The CSS `text-shadow` property is used to apply shadow to text, creating visual depth and highlighting.
+
+```css
+/* Adding a text shadow to an element with ID "exampleText" */
+#exampleText {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+```
+
+### Box Shadow
+
+The CSS `box-shadow` property is used to apply shadow to elements, such as divs or buttons. This creates a visual effect where the element appears to lift off the page or cast a shadow on other elements.
+
+```css
+/* Adding a box shadow to a div with class "exampleBox" */
+.exampleBox {
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+```
+
+> Shadow effects are a useful way to add depth and dimension to your web design elements.
