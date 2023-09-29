@@ -43,6 +43,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 30. [Image Background](#image-background)
 31. [Gradients](#gradients)
 32. [Shadow Effects](#shadow-effects)
+33. [Text Effects](#text-effects)
 
 ## CSS Selectors
 
@@ -1093,3 +1094,57 @@ The CSS `box-shadow` property is used to apply shadow to elements, such as divs 
 ```
 
 > Shadow effects are a useful way to add depth and dimension to your web design elements.
+
+## Text Effects
+
+### Text Overflow
+
+The CSS `text-overflow` property specifies how overflowed content that is not displayed should be signaled to the user. It is particularly useful when dealing with text within limited space, like in a container with a fixed width.
+
+```css
+/* Display ellipsis (...) at the end of overflowed text */
+.overflow-example {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowed content */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  width: 150px; /* Fixed width container */
+}
+```
+
+### Word Wrapping
+
+The CSS `word-wrap` property allows long words to be broken and wrap onto the next line. This ensures that text content fits within the given container without causing horizontal scrollbars.
+
+```css
+/* Wrap long words to the next line */
+.word-wrap-example {
+  word-wrap: break-word;
+  width: 200px; /* Fixed width container */
+}
+```
+
+### Word Breaking
+
+The CSS `word-break` property specifies line breaking rules, helping to control how words are divided and wrapped when text content overflows its container.
+
+```css
+/* Break words at any character to fit within the container */
+.word-break-example {
+  word-break: break-all;
+  width: 200px; /* Fixed width container */
+}
+```
+
+### Writing Mode
+
+The CSS `writing-mode` property specifies whether lines of text are laid out horizontally or vertically. It is particularly relevant when working with languages and scripts that are written vertically, such as some Asian languages.
+
+These text effects properties are useful for controlling text presentation and readability in various layout scenarios.
+
+```css
+/* Display text content vertically */
+.vertical-text-example {
+  writing-mode: vertical-rl; /* Right-to-left vertical writing mode */
+  width: 30px; /* Fixed width container for vertical text */
+}
+```
