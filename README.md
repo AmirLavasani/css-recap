@@ -44,6 +44,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 31. [Gradients](#gradients)
 32. [Shadow Effects](#shadow-effects)
 33. [Text Effects](#text-effects)
+34. [Web Fonts](#web-fonts)
 
 ## CSS Selectors
 
@@ -1148,3 +1149,19 @@ These text effects properties are useful for controlling text presentation and r
   width: 30px; /* Fixed width container for vertical text */
 }
 ```
+
+## Web Fonts
+
+### CSS `@font-face` Rule
+
+The CSS `@font-face` rule is used to define web fonts and make them available for use in your web pages. Here's an example of how to use the @font-face rule
+
+```css
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff); /* URL to the font file */
+}
+
+div {
+  font-family: myFirstFont; /* Use the defined font family for the div element */
+}
