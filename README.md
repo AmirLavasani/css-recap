@@ -45,6 +45,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 32. [Shadow Effects](#shadow-effects)
 33. [Text Effects](#text-effects)
 34. [Web Fonts](#web-fonts)
+35. [2D Transforms](#2d-transforms)
 
 ## CSS Selectors
 
@@ -1165,3 +1166,37 @@ The CSS `@font-face` rule is used to define web fonts and make them available fo
 div {
   font-family: myFirstFont; /* Use the defined font family for the div element */
 }
+```
+
+
+## 2D Transforms
+
+CSS transforms allow you to move, rotate, scale, and skew elements.
+
+Some older browsers need specific prefixes (`-ms-` or `-webkit-`) to understand the 2D transform properties:
+
+```css
+div {
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari prior 9.0 */
+  transform: rotate(20deg); /* Standard syntax */
+}
+```
+
+### Transform Methods
+
+- **translate()**: The `translate()` method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+- **rotate()**: The `rotate()` method rotates an element clockwise or counter-clockwise according to a given degree.
+- **scaleX()**: The `scaleX()` method increases or decreases the width of an element.
+- **scaleY()**: The `scaleY()` method increases or decreases the height of an element.
+- **scale()**: The `scale()` method increases or decreases the size of an element (according to the parameters given for the width and height).
+- **skewX()**: The `skewX()` method skews an element along the X-axis by the given angle.
+- **skewY()**: The `skewY()` method skews an element along the Y-axis by the given angle.
+- **skew()**: The `skew()` method skews an element along the X and Y-axis by the given angles.
+- **matrix()**: The `matrix()` method combines all the 2D transform methods into one.
+
+Example of the `matrix()` method:
+
+```css
+transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+```
