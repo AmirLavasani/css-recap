@@ -46,6 +46,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 33. [Text Effects](#text-effects)
 34. [Web Fonts](#web-fonts)
 35. [2D Transforms](#2d-transforms)
+36. [3D Transforms](#3d-transforms)
 
 ## CSS Selectors
 
@@ -1200,3 +1201,12 @@ Example of the `matrix()` method:
 ```css
 transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
 ```
+
+## 3D Transforms
+
+With the CSS transform property, you can use the following 3D transformation methods:
+
+- **rotateX()**: The `rotateX()` method rotates an element around its X-axis at a given degree.
+- **rotateY()**: The `rotateY()` method rotates an element around its Y-axis at a given degree.
+- **rotateZ()**: The `rotateZ()` method rotates an element around its Z-axis at a given degree.
+
