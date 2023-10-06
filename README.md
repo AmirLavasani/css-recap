@@ -47,6 +47,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 34. [Web Fonts](#web-fonts)
 35. [2D Transforms](#2d-transforms)
 36. [3D Transforms](#3d-transforms)
+37. [Transitions](#transitions)
 
 ## CSS Selectors
 
@@ -1210,3 +1211,69 @@ With the CSS transform property, you can use the following 3D transformation met
 - **rotateY()**: The `rotateY()` method rotates an element around its Y-axis at a given degree.
 - **rotateZ()**: The `rotateZ()` method rotates an element around its Z-axis at a given degree.
 
+
+## Transitions
+
+CSS transitions allow you to change property values smoothly over a given duration. There are several transition-related properties:
+
+- `transition`
+- `transition-delay`
+- `transition-duration`
+- `transition-property`
+- `transition-timing-function`
+
+To create a transition effect, you must specify two things:
+1. The CSS property you want to add an effect to.
+2. The duration of the effect.
+
+### Change Several Property Values
+
+```css
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+}
+div:hover {
+  width: 300px;
+  height: 300px;
+}
+```
+
+### Speed Curve of the Transition
+
+The `transition-timing-function` property specifies the speed curve of the transition effect. There are several options:
+
+- `ease`: Specifies a transition effect with a slow start, then fast, then end slowly (this is default).
+- `linear`: Specifies a transition effect with the same speed from start to end.
+- `ease-in`: Specifies a transition effect with a slow start.
+- `ease-out`: Specifies a transition effect with a slow end.
+- `ease-in-out`: Specifies a transition effect with a slow start and end.
+- `cubic-bezier(n, n, n, n)`: Lets you define your own values in a cubic-bezier function.
+
+### Delay the Transition Effect
+
+The `transition-delay` property specifies a delay (in seconds) for the transition effect.
+
+You can change as many CSS properties as you want, as many times as you want.
+
+### Transition + Transformation
+
+```css
+div {
+  transition: width 2s, height 2s, transform 2s;
+}
+```
+
+Example:
+
+```css
+div {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+```
