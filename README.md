@@ -48,6 +48,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 35. [2D Transforms](#2d-transforms)
 36. [3D Transforms](#3d-transforms)
 37. [Transitions](#transitions)
+38. [Animations](#animations)
 
 ## CSS Selectors
 
@@ -1275,5 +1276,91 @@ div {
   transition-duration: 2s;
   transition-timing-function: linear;
   transition-delay: 1s;
+}
+```
+
+## Animations
+
+Animations in CSS allow an element to gradually change from one style to another.
+
+### Keyframes
+
+The `@keyframes` rule is used to define animations with specific styles at various points in time.
+
+Example using `from` and `to`:
+```css
+@keyframes example {
+  from { background-color: red; }
+  to { background-color: yellow; }
+}
+```
+
+It is also possible to use percent. By using percent, you can add as many style changes as you like.
+
+```css
+@keyframes example {
+  0% { background-color: red; }
+  25% { background-color: yellow; }
+  50% { background-color: blue; }
+  100% { background-color: green; }
+}
+```
+### Delay an Animation
+
+The `animation-delay` property specifies a delay for the start of an animation.
+
+### Set How Many Times an Animation Should Run
+
+The `animation-iteration-count` property specifies the number of times an animation should run. Use "infinite" for continuous animation.
+
+### Run Animation in Reverse Direction or Alternate Cycles
+
+The `animation-direction` property specifies whether an animation should play forwards, backwards, or in alternate cycles.
+
+Values for `animation-direction`:
+
+- `normal` (default): Animation plays forwards.
+- `reverse`: Animation plays in reverse.
+- `alternate`: Animation alternates between forwards and reverse.
+- `alternate-reverse`: Animation alternates, starting in reverse.
+
+### Speed Curve of the Animation
+
+The `animation-timing-function` property specifies the speed curve of the animation.
+
+Values for `animation-timing-function`:
+
+- `ease` (default): Slow start, fast middle, slow end.
+- `linear`: Constant speed from start to end.
+- `ease-in`: Slow start.
+- `ease-out`: Slow end.
+- `ease-in-out`: Slow start and end.
+- `cubic-bezier(n,n,n,n)`: Define custom values with a cubic-bezier function.
+
+### Specify the Fill Mode For an Animation
+
+The `animation-fill-mode` property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both).
+
+Values for `animation-fill-mode`:
+
+- `none` (default): No styles applied before or after animation.
+- `forwards`: Retain styles from the last keyframe.
+- `backwards`: Apply styles from the first keyframe and retain during delay.
+- `both`: Follow rules for both forwards and backwards.
+
+Example:
+
+```css
+div {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+div {
+  animation: example 5s linear 2s infinite alternate;
 }
 ```
