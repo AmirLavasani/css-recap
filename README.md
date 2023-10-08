@@ -49,6 +49,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 36. [3D Transforms](#3d-transforms)
 37. [Transitions](#transitions)
 38. [Animations](#animations)
+39. [Tooltip](#tooltip)
 
 ## CSS Selectors
 
@@ -1364,3 +1365,50 @@ div {
   animation: example 5s linear 2s infinite alternate;
 }
 ```
+
+## Tooltip
+
+A tooltip is a small pop-up box that appears when a user hovers over an element, providing additional information or context. CSS can be used to style and create tooltips for your web applications.
+
+### Creating a Simple Tooltip
+
+A tooltip is a small pop-up box that appears when you hover over an element, providing additional information or context. You can create tooltips in CSS with the following steps:
+
+1. **HTML Structure**: Add the HTML structure for the element that needs a tooltip. For example:
+
+```html
+<span class="tooltip-container">
+  Hover over me
+  <span class="tooltip-text">This is a tooltip</span>
+</span>
+```
+
+2. **CSS Styles**: Style the tooltip container and text. Make the tooltip text hidden by default and visible on hover. Use CSS position to control the tooltip's placement.
+
+```css
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: visibility 0.2s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+}
+```
+
+This CSS creates a tooltip that appears above the element when you hover over it.
