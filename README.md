@@ -50,6 +50,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 37. [Transitions](#transitions)
 38. [Animations](#animations)
 39. [Tooltip](#tooltip)
+40. [Styling Images](#styling-images)
 
 ## CSS Selectors
 
@@ -1412,3 +1413,40 @@ A tooltip is a small pop-up box that appears when you hover over an element, pro
 ```
 
 This CSS creates a tooltip that appears above the element when you hover over it.
+
+## Styling Images
+
+### Rounded Images
+
+You can use the `border-radius` property to create rounded images. This adds a smooth, rounded border to your image.
+
+```css
+img {
+  border-radius: 8px;
+}
+```
+
+### Responsive Images
+
+To make an image scale down to fit its container but never scale up beyond its original size, you can use the following CSS:
+
+```css
+img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+This ensures that images adapt to various screen sizes, making them responsive.
+
+### Centering an Image
+To center an image both horizontally and vertically, set the left and right margins to "auto," and make it a block element:
+
+```css
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+```
