@@ -51,6 +51,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 38. [Animations](#animations)
 39. [Tooltip](#tooltip)
 40. [Styling Images](#styling-images)
+41. [`object-fit` Property](#object-fit-property)
 
 ## CSS Selectors
 
@@ -1450,3 +1451,21 @@ img {
   width: 50%;
 }
 ```
+
+## `object-fit` Property
+
+The CSS `object-fit` property is used to specify how an `<img>` or `<video>` should be resized to fit its container.
+
+The `object-fit` property can have the following values:
+
+- `fill`: This is the default. The replaced content is sized to fill the element's content box. If necessary, the object will be stretched or squished to fit.
+
+- `contain`: The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box.
+
+- `cover`: The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit.
+
+- `none`: The replaced content is not resized.
+
+- `scale-down`: The content is sized as if none or contain were specified, which would result in a smaller concrete object size.
+
+You can use the `object-fit` property to control how images and videos are displayed within their containers, making it easier to manage their aspect ratios and sizes.
