@@ -52,6 +52,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 39. [Tooltip](#tooltip)
 40. [Styling Images](#styling-images)
 41. [`object-fit` Property](#object-fit-property)
+42. [Button Styling](#button-styling)
 
 ## CSS Selectors
 
@@ -1469,3 +1470,30 @@ The `object-fit` property can have the following values:
 - `scale-down`: The content is sized as if none or contain were specified, which would result in a smaller concrete object size.
 
 You can use the `object-fit` property to control how images and videos are displayed within their containers, making it easier to manage their aspect ratios and sizes.
+
+## Button Styling
+
+### Button Sizes
+- Use the `font-size` property to change the font size of a button.
+
+### Rounded Buttons
+- Use the `border-radius` property to add rounded corners to a button.
+
+### Colored Button Borders
+- Use the `border` property to add a colored border to a button.
+
+### Hoverable Buttons
+- Use the `:hover` selector to change the style of a button when you move the mouse over it.
+
+  > Tip: Use the `transition-duration` property to determine the speed of the "hover" effect.
+
+### Shadow Buttons
+- Use the `box-shadow` property to add shadows to a button.
+
+### Disabled Buttons
+- Use the `opacity` property to add transparency to a button, creating a "disabled" look.
+
+  > Tip: You can also add the `cursor` property with a value of "not-allowed," which will display a "no parking sign" when you mouse over the button.
+
+### Button Width
+- By default, the size of the button is determined by its text content, making it as wide as its content. Use the `width` property to change the width of a button.
