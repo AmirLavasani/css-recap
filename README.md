@@ -53,6 +53,7 @@ I was going through some of my old drives and stumbled upon this complete notes 
 40. [Styling Images](#styling-images)
 41. [`object-fit` Property](#object-fit-property)
 42. [Button Styling](#button-styling)
+43. [Multiple Columns](#multiple-columns)
 
 ## CSS Selectors
 
@@ -1497,3 +1498,18 @@ You can use the `object-fit` property to control how images and videos are displ
 
 ### Button Width
 - By default, the size of the button is determined by its text content, making it as wide as its content. Use the `width` property to change the width of a button.
+
+## Multiple Columns
+
+The CSS multi-column layout allows easy definition of multiple columns of text, similar to how they appear in newspapers. You can control this layout using the following properties:
+
+- `column-count`: Specifies the number of columns an element should be divided into.
+- `column-gap`: Specifies the gap between the columns.
+- `column-rule-style`: Specifies the style of the rule between columns.
+- `column-rule-width`: Specifies the width of the rule between columns.
+- `column-rule-color`: Specifies the color of the rule between columns.
+- `column-rule`: A shorthand property for setting all the `column-rule-*` properties above.
+- `column-span`: Specifies how many columns an element should span across.
+- `column-width`: Specifies a suggested, optimal width for the columns.
+
+This set of properties allows you to create text layouts with multiple columns, making it useful for designs that need a newspaper-style appearance.
