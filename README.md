@@ -1513,3 +1513,26 @@ The CSS multi-column layout allows easy definition of multiple columns of text, 
 - `column-width`: Specifies a suggested, optimal width for the columns.
 
 This set of properties allows you to create text layouts with multiple columns, making it useful for designs that need a newspaper-style appearance.
+
+### Create Multiple Columns
+
+The `column-count` property is used to specify the number of columns an element should be divided into.
+
+### Specify the Gap Between Columns
+
+The `column-gap` property is used to define the gap between the columns.
+
+### Column Rules
+
+- `column-rule-style` specifies the style of the rule between columns.
+- `column-rule-width` sets the width of the rule between columns.
+- `column-rule-color` determines the color of the rule between columns.
+- `column-rule` is a shorthand property for setting all the column rule-related properties mentioned above.
+
+### Specify How Many Columns an Element Should Span
+
+The `column-span` property allows you to specify how many columns an element should span across.
+
+### Specify The Column Width
+
+The `column-width` property is used to suggest an optimal width for the columns.
