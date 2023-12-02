@@ -54,6 +54,8 @@ I was going through some of my old drives and stumbled upon this complete notes 
 41. [`object-fit` Property](#object-fit-property)
 42. [Button Styling](#button-styling)
 43. [Multiple Columns](#multiple-columns)
+44. [User Interface](#user-interface)
+
 
 ## CSS Selectors
 
@@ -1536,3 +1538,30 @@ The `column-span` property allows you to specify how many columns an element sho
 ### Specify The Column Width
 
 The `column-width` property is used to suggest an optimal width for the columns.
+
+## User Interface
+
+### User Interface Properties
+
+- **Resize**: The `resize` property specifies whether and how an element can be resized by the user.
+  
+  In many browsers, the `<textarea>` element is resizable by default. To disable resizing, you can use the following CSS:
+  ```css
+  textarea {
+    resize: none;
+  }
+
+- **Outline Offset**: The `outline-offset` property adds space between an outline and the edge or border of an element.
+  ```css
+  /* Adding space between the outline and the element */
+  div {
+    outline: 2px solid blue;
+    outline-offset: 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+  }
+  ```
+
+> Note: The outline differs from borders! Unlike borders, the outline is drawn outside the element's border and may overlap other content. Additionally, the outline is not part of the element's dimensions, so the element's total width and height are not affected by the width of the outline.
+
